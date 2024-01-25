@@ -30,6 +30,9 @@ class Solution:
                 max_sum = current_sum
             
             if current_sum < 0:
+                # nums[0] + nums[1] < 0 のとき
+                # nums[0] + nums[1] + nums[2] + nums[3] < nums[2] + nums[3]となるため
+                # 新しい部分配列を考える
                 current_sum = 0
         
         return max_sum
