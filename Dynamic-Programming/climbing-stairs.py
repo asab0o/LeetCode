@@ -4,7 +4,7 @@ class Solution:
     def climbStairs(self, n: int) -> int:
         ans = 0
         if n > 2:
-            return climbStairs(n-2) + 2
+            return self.climbStairs(n-2) + 2
         if n == 2:
             return ans + 2
         if n == 1:
